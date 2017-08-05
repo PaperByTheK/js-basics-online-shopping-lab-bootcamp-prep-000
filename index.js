@@ -1,7 +1,26 @@
-var cart;
+
+var cart = [];
 
 function setCart(newCart) {
   cart = newCart;
+}
+
+function getCart(){
+    return cart
+}
+
+function addToCart(item){var price = Math.floor(1+Math.random()*100)+1; while (item.length > 0){
+
+    const product = {[item]: price}
+    cart.push(product)
+
+}
+
+    return cart
+}
+
+function viewCart(){
+    return cart
 }
 
 function total() {
